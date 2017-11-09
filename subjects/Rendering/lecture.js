@@ -54,8 +54,8 @@ import DOM from 'react-dom-factories';
 
 ////////////////////////////////////////////////////////////////////////////////
 // you get an event, as you'd expect
-//function handleClick() {
-  //console.log(event.button)
+//function handleClick(event) {
+  //console.log(event.nativeEvent)
 //}
 //const element = DOM.button({ onMouseDown: handleClick }, 'log button')
 //ReactDOM.render(element, document.getElementById('app'))
