@@ -108,42 +108,13 @@ updateThePage()
 //  }
 //}
 //
-//class ToggleTracker extends React.Component {
-//  state = {
-//    numToggles: 0
-//  }
-//
-//  handleToggle = () => {
-//    this.setState({
-//      numToggles: this.state.numToggles + 1
-//    })
-//  }
-//
-//  render() {
-//    let { children } = this.props
-//
-//    children = React.Children.map(children, (child) => (
-//      React.cloneElement(child, {
-//        onToggle: this.handleToggle
-//      })
-//    ))
-//
-//    return (
-//      <div>
-//        <pre>{JSON.stringify(this.state, null, 2)}</pre>
-//        {children}
-//      </div>
-//    )
-//  }
-//}
-//
 //ReactDOM.render((
-//  <ToggleTracker>
+//  <div>
 //    <ContentToggle title="Tacos">
 //      <p>A taco is a traditional Mexican dish composed of a corn or wheat tortilla folded or rolled around a filling.</p>
 //    </ContentToggle>
 //    <ContentToggle title="Burritos">
 //      <p>A burrito is a type of Mexican and Tex-Mex food, consisting of a wheat flour tortilla wrapped or folded into a cylindrical shape to completely enclose the filling (in contrast to a taco, which is generally formed by simply folding a tortilla in half around a filling, leaving the semicircular perimeter open).</p>
 //    </ContentToggle>
-//  </ToggleTracker>
+//  </div>
 //), document.getElementById('app'))
