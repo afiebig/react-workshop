@@ -1,24 +1,25 @@
-import React from 'react'
+// import React from 'react'
 import ReactDOM from 'react-dom'
+import DOM from 'react-dom-factories';
 
 ////////////////////////////////////////////////////////////////////////////////
 // React components are really just functions that take attributes
-//const element = React.DOM.input({type: 'text'})
+//const element = DOM.input({type: 'text'})
 //ReactDOM.render(element, document.getElementById('app'))
 
 ////////////////////////////////////////////////////////////////////////////////
 // You can also pass in children as extra arguments
-//const element = React.DOM.select({value: '2'},
-                                //React.DOM.option({value: '1'}, 'one'),
-                                //React.DOM.option({value: '2'}, 'two'),
-                                //React.DOM.option({value: '3'}, 'three')
+//const element = DOM.select({value: '2'},
+                                //DOM.option({value: '1'}, 'one'),
+                                //DOM.option({value: '2'}, 'two'),
+                                //DOM.option({value: '3'}, 'three')
                               //)
 //ReactDOM.render(element, document.getElementById('app'))
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // And build up more UI
-//const { div, select, option, h1 } = React.DOM
+//const { div, select, option, h1 } = DOM
 //const element = div({},
                   //h1({className: 'hot'}, 'These are just functions'),
                   //select({value: '2'},
@@ -38,7 +39,7 @@ import ReactDOM from 'react-dom'
 
 ////////////////////////////////////////////////////////////////////////////////
 // can pass in functions as event handlers
-//const element = React.DOM.button({onClick: function() { alert('clicked!') }}, 'alert!')
+//const element = DOM.button({onClick: function() { alert('clicked!') }}, 'alert!')
 //ReactDOM.render(element, document.getElementById('app'))
 
 
@@ -47,7 +48,7 @@ import ReactDOM from 'react-dom'
 //function handleClick() {
   //alert('clicked some more!')
 //}
-//const element = React.DOM.button({onClick: handleClick}, 'alert!')
+//const element = DOM.button({onClick: handleClick}, 'alert!')
 //ReactDOM.render(element, document.getElementById('app'))
 
 
@@ -56,7 +57,7 @@ import ReactDOM from 'react-dom'
 //function handleClick() {
   //console.log(event.button)
 //}
-//const element = React.DOM.button({ onMouseDown: handleClick }, 'log button')
+//const element = DOM.button({ onMouseDown: handleClick }, 'log button')
 //ReactDOM.render(element, document.getElementById('app'))
 
 
@@ -67,7 +68,7 @@ import ReactDOM from 'react-dom'
                 //<p>Pork Carnitas street tacos are the best</p>
               //</div>
 
-//const { div, h1, p } = React.DOM
+//const { div, h1, p } = DOM
 //const element = div({ className: "App" },
                 //h1({ className: "Title" }, 'Hello!'),
                 //p({}, 'Pork Carnitas street tacos are the best')
@@ -130,7 +131,7 @@ import ReactDOM from 'react-dom'
 // - JavaScript
 // - JSX ... or not
 
-//const { select, option } = React.DOM
+//const { select, option } = DOM
 //ReactDOM.render(select({}, months.map((month, index) => (
   //option({}, `(${padMonth(index)}) ${month}`)
 //))), document.getElementById('app'))
