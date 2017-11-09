@@ -30,6 +30,20 @@ function ContentToggle() {
 
 function updateThePage() {
   ReactDOM.render(<ContentToggle/>, document.getElementById('app'))
+
+  // ReactDOM.render(
+  //   React.createElement(ContentToggle),
+  //   document.getElementById('app')
+  // )
+
+  // ReactDOM.render(
+  //   <div>
+  //     <ContentToggle />
+  //     <ContentToggle />
+  //     <ContentToggle />
+  //   </div>,
+  //   document.getElementById('app')
+  // )
 }
 
 updateThePage()
